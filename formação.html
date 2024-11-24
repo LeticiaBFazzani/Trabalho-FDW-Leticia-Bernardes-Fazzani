@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+            background-color: rgb(198, 245, 103);
+        }
+
+        .fotoPerfil {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(198, 245, 103)
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            background-color: rgb(243, 197, 220);
+            font-style: italic;
+            font-size: large;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: purple;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid purple 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid purple;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 400px;
+            height: 200px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                background-color: rgb(198, 245, 103);
+            }
+
+            .fotoPerfil {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Leticia Bernardes Fazzani</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Apresentação</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portifólio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="fotoPerfil">
+            <img src="chapeu.png">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Analista de Suporte N1 </p>
+                <p>
+                    <strong>Data do Nascimento:</strong>
+                    07/02/1989
+                </p>
+                <p><strong>Curso:</strong> Tecnologia em Banco de Dados</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1 style= "text-decoration-line: underline;">
+                Formação
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="fotoJesuino1.png">
+
+                    <div class="">
+                        <h2>Ensino Fundamental e Ensino Médio</h2>
+                        <p>Escola Jesuíno de Arruda; entrei nessa escola estadual no ano de 2000 na quinta série,
+                           e terminei o Ensino Fundamental no ano 2003 e continuei nessa mesma escola até
+                            o ano de 2006 onde conclui o Ensino Médio.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="fotoIndustrial.png">
+
+                    <div class="">
+                        <h2>Curso Técnico em Administração</h2>
+                        <p>Escola Industrial Paulino Botelho; entrei nessa escola em junho de 2009,
+                            onde fiz meu curso técnico em administração, o qual conclui em dezembro de 2010.
+                        </p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="fotoUninter.png">
+
+                    <div class="">
+                        <h2>Graduação Tecnologia em Banco de Dados</h2>
+                        <p>Centro Universitário Internacional-Uninter; comecei meus estudos no ano de 2024,
+                            no formato EAD, onde ainda continuo cursando até o ano de 2026.
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h3>Desenvolvido por Leticia Bernrades Fazzani para fins Educacionais</h3>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>

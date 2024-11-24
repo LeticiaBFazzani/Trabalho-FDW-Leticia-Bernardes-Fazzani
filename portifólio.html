@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+            background-color: rgb(198, 245, 103);
+        }
+        
+
+        
+
+
+        .fotoPerfil {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(198, 245, 103)
+
+        }
+
+        .principal {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            background-color: rgb(243, 197, 220);
+            font-style: italic;
+            font-size: large;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: purple;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid purple 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                background-color: rgb(198, 245, 103);
+
+            }
+
+            .fotoPerfil {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Leticia Bernardes Fazzani</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Apresentação</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portifólio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="fotoPerfil">
+            <img src="portfolio.png">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Analista de Suporte N1 </p>
+                <p>
+                    <strong>Data do Nascimento:</strong>
+                    07/02/1989
+                </p>
+                <p><strong>Curso:</strong> Tecnologia em Banco de Dados</p>
+                <br><br>
+            </div>
+        </aside>
+            <section class=" principal">
+                <h1 style= "text-decoration-line: underline;">
+                    Portfólio
+                </h1>
+                <h3>Clique e acesse meus trabalhos iniciais com HTML e CSS</h3>
+                <br>
+                <h3>Unicórnios Fofos:</h3>
+                <a href="Unicornios.html">Unicórnios Fofos</a>
+                <br>
+                <h3>Violino a arte em Instrumento:</h3>
+                <a href="Violino.html">Violino a arte em Instrumento</a>
+                <br><br><br><br><br><br><br>
+
+                   
+            </section>
+    </div>
+    <footer class="container">
+        <h3>Desenvolvido por Leticia Bernrades Fazzani para fins Educacionais</h3>
+    </footer>
+    </div>
+</body>
+
+</html>

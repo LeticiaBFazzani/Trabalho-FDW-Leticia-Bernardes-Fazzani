@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Violino</title>
+    <style>
+        
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+            font-style: italic;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content:flex-start;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+            background-color: orange;
+        }
+        
+
+        
+
+
+        .fotoPerfil {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: orange
+            
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            background-color:rgb(248, 248, 171);
+            font-style: italic;
+            font-size: large;
+
+        }
+            /* Estilo para as imagens para que fiquem em blocos independentes */
+        .imgbloc {
+        display: block ; /* Faz com que cada imagem se comporte como um bloco */
+        margin-bottom: 40px; /* Espaço entre as imagens */
+        width: auto; /* Mantém a proporção da imagem */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da página */
+        
+        }
+        .divimg {
+            display: flex;
+             gap: 20px; /* Espaço entre as imagens */
+             
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: brown;
+            
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+           font-size: larger;
+            position: fixed;
+           
+        }
+
+        li {
+            float:none;
+            font-size: larger;
+        }
+
+        a:hover {
+            background-color: brown;
+            color: white;
+        }
+
+       
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                background-color: rgb(198, 245, 103);
+
+            }
+
+            .fotoPerfil {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+<br>
+<a style="border: solid orange; padding: 8px 16px" href="portifólio.html">Voltar</a>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Violino a arte em Instrumento</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <h2>Conheça um pouco sobre o Violino</h2>
+    </nav>
+    <div class="container wrapper">
+        <aside class="fotoPerfil">
+            <img src="Sem título.png">
+            <div class="infos">
+                <ul>
+                    <li><a href="#origens">Origens</a></li>
+                    <br><br>
+                    <li><a href="#invenção">Invenção</a></li>
+                    <br><br>
+                    <li><a href="#evolução">Evolução</a></li>
+                    <br><br>
+                    <li><a href="#mudanças">Mudanças</a></li>
+                    <br><br>
+                    <li><a href="#nome">Nome</a></li>
+                </ul>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1 style= "text-decoration-line: underline;">
+                Conhecendo sobre o Instrumento Violino
+            </h1>
+
+            <p>O violino é um instrumento musical que surgiu na Itália no século XVI, a partir de adaptações de      violas primitivas e outros instrumentos de cordas: 
+            <div class="divimg">
+                <img src="primitiva1.png" alt="Viola Primitiva" class="imgbloc" title="Viola de Cocho">
+                <img src="primitiva2.png" alt="Viola Primitiva" class="imgbloc" title="Alaúde">
+                <img src="primitiva3.png" alt="Viola Primitiva" class="imgbloc" title="Viola antiga em madeira">
+            </div>
+                
+            <section id="origens">
+               <h2>Origens</h2>
+               <p> O violino é descendente de instrumentos orientais mais antigos, como o Rebab árabe, o Néfer egípcio e o Ravanastron indiano. A história dos instrumentos de corda na Europa remonta ao século IX com a lira bizantina.</p>
+               <div class="divimg">
+                <img src="Rebab.png" class="imgbloc" title="Rebab Árabe">
+                <img src="Nefer.png" class="imgbloc" title="Néfer Egípcio">
+                <img src="Ravanastron.png" class="imgbloc" title="Ravanastron Indiano">
+                <img src="Lira.png" class="imgbloc" title="Lira Bisantina">
+               </div>
+
+            </section>
+            <section id="invenção">
+               <h2>Invenção</h2>
+               <p>A invenção do violino é atribuída ao italiano Gasparo da Salò, que viveu entre os anos 1540 e 1609. </p>
+            
+               <div class="divimg">
+                <img src="Gasparo.png" class="imgbloc" title="Gasparo da Salò">
+                <img src="Estatua.png" class="imgbloc" title="Estátua de Gasparo">
+               </div>
+            </section>
+            <section id="evolução">
+                <h2>Evolução</h2>
+                <p> O violino evoluiu rapidamente em popularidade e complexidade, e se espalhou pela Europa e pelo mundo. A arte de fazer violinos de primeira classe foi dominada por três famílias da região de Cremona: Guarnieri, Stradivarius e Amati.</p> 
+            
+                <div class="divimg">
+                    <img src="Stradivarius.png" class="imgbloc" title="Violino Stradivarius">
+                   
+                </div>
+            </section>
+            <section id="mudanças">
+                <h2>Mudanças</h2>
+                <p>O padrão geral do instrumento foi estabelecido no século XVII. A partir do século XIX, o violino sofreu algumas modificações, como a alteração da espessura das cordas, o uso de um cavalete mais alto e um braço mais inclinado.</p>
+           
+                <div class="divimg">
+                    <img src="musico.png" class="imgbloc" title="Violinista">
+                   
+                </div>
+            </section>
+            <section id="nome">
+               <h2>Nome</h2>
+                <p>O termo “violino” foi introduzido na língua portuguesa no século XX. Até então, a designação do instrumento era rabeca, palavra que ainda se utiliza em muitos lugares</p>
+            </section>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h3>Desenvolvido por Leticia Bernrades Fazzani </h3>
+    </footer>
+    </div>
+    
+</body>
+</html>

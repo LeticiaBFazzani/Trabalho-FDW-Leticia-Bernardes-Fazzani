@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <style> /*criação da estilização do CSS*/
+        
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+            background-color: rgb(198, 245, 103);
+        }
+        
+
+        
+
+
+        .fotoPerfil {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(198, 245, 103)
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            background-color: rgb(243, 197, 220);
+            font-style: italic;
+            font-size: large;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: purple;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: purple;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid purple 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                background-color: rgb(198, 245, 103);
+
+            }
+
+            .fotoPerfil {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Leticia Bernardes Fazzani</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Apresentação</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portifólio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="fotoPerfil">
+            <img src="fotoPerfil3.png">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Analista de Suporte N1 </p>
+                <p>
+                    <strong>Data do Nascimento:</strong>
+                    07/02/1989
+                </p>
+                <p><strong>Curso:</strong> Tecnologia em Banco de Dados</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1 style= "text-decoration-line: underline;">
+                Quem sou eu?
+            </h1>
+            <p>Eu sou Leticia, nasci no dia 7 de fevereiro de 1989, em São Carlos, interior de São Paulo. Sou filha mais velha de V.C.B e M.E.N.B, e cresci com dois irmãos mais novos, o que sempre me colocou no papel de irmã mais velha e, com isso, desenvolvi desde cedo uma grande responsabilidade e cuidado com minha família.</p>
+            <br>
+                <p>Desde a adolescência, a música sempre fez parte da minha vida. Aprendi a tocar violino e comecei a me apresentar em diversos lugares, como na igreja e na Universidade Federal de São Carlos (UFSCar), onde tive a oportunidade de aprimorar minhas habilidades musicais. Em 2007 e 2008, prestei vestibular para o curso de Licenciatura em Música na UFSCar, depois de me dedicar bastante aos cursinhos preparatórios, mas, infelizmente, não consegui passar. Foi um momento difícil, mas percebi que precisava entrar no mercado de trabalho para começar a ter minha própria independência financeira. Por isso, resolvi fazer um curso técnico em Administração, que, ao mesmo tempo, me proporcionaria uma nova direção profissional.No primeiro semestre do curso técnico, consegui um estágio na Caixa Econômica Federal, e ao final do estágio, fui efetivada. Essa experiência foi muito importante para minha trajetória profissional, pois foi onde pude aprender, crescer e ganhar autonomia no meu trabalho.</p>
+               <br>
+                <p>Conheci o Matheus quando tinha apenas 11 anos, e nós nos tornamos muito próximos ao longo dos anos. Nos casamos quando eu tinha 21, e depois de sete anos juntos, tivemos nossa filha, Mariana, que é a nossa maior alegria.
+                
+                Aos 35 anos, decidi voltar a estudar. Mesmo com toda a experiência que já tinha acumulado, senti que era hora de me reinventar. Hoje, sou estudante do curso de Tecnologia em Banco de Dados, em modalidade EAD, o que me permite continuar aprendendo e me preparando para o futuro. Esse novo desafio é uma forma de expandir meus horizontes e seguir crescendo, tanto profissional quanto pessoalmente.</p>
+                <br>
+                <p>Minha jornada tem sido marcada por muita persistência e resiliência. Passei por muitos desafios, mas sempre busquei aprender com eles e seguir em frente. Hoje, sou muito grata por tudo o que vivi até aqui e por todas as oportunidades que ainda tenho para crescer e me desenvolver.</p>
+           
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h3>Desenvolvido por Leticia Bernrades Fazzani para fins Educacionais</h3>
+    </footer>
+    </div>
+</body>
+
+</html>
